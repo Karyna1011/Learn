@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// запрос в формате http
-	response, request := http.Get("https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%82-%D1%80%D0%BE%D0%BA")
+	response, request := http.Get("http://localhost:8000/_/api/")
 	if request != nil {
 		log.Fatal("failed to read file:",request) //Fatal is equivalent to Print() followed by a call to os.Exit(1)
 	}
